@@ -2,7 +2,7 @@ name := "scala-commons"
 
 organization := "org.lolczak"
 
-version := "0.1.0"
+version := "0.2.0-SNAPSHOT"
 
 scalaVersion := "2.11.7"
 
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.apache.commons" % "commons-lang3" % "3.3.2"
 )
 
-credentials += Credentials("Sonatype Nexus Repository Manager", "nexus.blocker.ra", "admin", "admin123")
+credentials += Credentials(Path.userHome / ".nexus_credentials")
 
 publishTo := {
   val nexus = "http://nexus.blocker.ra:8081/"

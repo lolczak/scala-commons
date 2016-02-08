@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
 credentials += Credentials(Path.userHome / ".nexus_credentials")
 
 publishTo := {
-  val nexus = "http://nexus.blocker.ra:8081/"
+  val nexus = "http://nexus.blocker.vpn/"
   if (isSnapshot.value)
     Some("snapshots" at nexus + "content/repositories/snapshots")
   else
